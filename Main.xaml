@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="992,1947" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1183,1947" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -114,7 +114,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadCsvFile DataTable="[existing_logs]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" Encoding="{x:Null}" FilePath="RaceLogs.csv" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IgnoreQuotes="{x:Null}" PathResource="{x:Null}" />
+    <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[existing_logs]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="RaceLogs.csv" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Play Logs - View Your Play History | Nitro Type" sap:VirtualizedContainerService.HintSize="530,1608" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="284a6b33-22c7-4901-b653-d718485582ec" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -168,7 +168,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:FilterDataTable>
-            <ui:RemoveDataColumn ColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Remove race number" Column="{x:Null}" ColumnIndex="0" DataTable="[new_logs]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="434,249" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1">
+            <ui:RemoveDataColumn Column="{x:Null}" ColumnName="{x:Null}" sap2010:Annotation.AnnotationText="Remove race number" ColumnIndex="0" DataTable="[new_logs]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="434,249" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -179,7 +179,7 @@
             <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" DataTable="[existing_logs]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="SortDataTable_4" Order="Ascending" OutputDataTable="[existing_logs]" SortOrder="Ascending">
               <ui:SortDataTable.ColumnIndex>
                 <InArgument x:TypeArguments="s:Nullable(x:Int32)">
-                  <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="1" />
+                  <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="0" />
                 </InArgument>
               </ui:SortDataTable.ColumnIndex>
             </ui:SortDataTable>
