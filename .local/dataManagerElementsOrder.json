@@ -12,8 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "new_logs&Sequence_2",
-        "existing_logs&Sequence_1"
+        "dt_new_logs&Sequence_2",
+        "dt_existing_logs&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
