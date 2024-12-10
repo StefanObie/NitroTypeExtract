@@ -13,6 +13,12 @@ The "Export this log as CSV" feature is blocked.
 ### The Solution
 UiPath extract the data from all the pages and store it in a CSV file. Only the race logs of the last 30 days are stored on Nitro Type, but older race logs can be stored in the CSV file. The race logs can be found on the [history](https://www.nitrotype.com/racelog/racelog) page. Duplicate logs are not saved in the CSV file. 
 
+## Presentation: Power BI
+The [link](https://app.powerbi.com/links/eCTIt4fFG1?ctid=1bedeeba-8b6d-4e9b-b4a4-18bca8bcee90&pbi_source=linkShare) to the Power BI dashboard. The link is only accessible with the company creditentials.
+
+![Power BI Dashboard](img/image.png) \
+*Figure: Power BI Dashboard.*
+
 ## Presentation: Excel
 The data is imported to Excel. The data is transformed, which include the removal of unwanted units and formatting of the date and time. The data is summarised in three graphs.
 
