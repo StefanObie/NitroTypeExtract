@@ -1,0 +1,6 @@
+{
+  "Name": "NitroTypeExtract",
+  "ProjectType": "Process",
+  "Description": "Download all the race logs from the Nitro Type statistics page",
+  "MainFile": "Main.xaml"
+}
